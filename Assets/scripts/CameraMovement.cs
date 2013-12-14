@@ -25,6 +25,21 @@ public class CameraMovement : MonoBehaviour {
 		else {
 			//screenpos.: WorldToScreenPoint (transform.position)
 			Vector3 distance = camera.WorldToScreenPoint(target.transform.position) - camera.WorldToScreenPoint(transform.position);
+			if (target.GetComponent("Player")) {
+				float xoffset = (Screen.width * -zoomFactor /20) - Screen.width/20;
+				float yoffset = (Screen.height * -zoomFactor /20) - Screen.height/20;
+
+				Vector2 direction = (Input.mousePosition - new Vector3(Screen.width/2, Screen.height/2, 0));
+
+				float xprefix = direction.x/500;
+				float yprefix = direction.y/500;
+
+				xoffset *= xprefix;
+				yoffset *= yprefix;
+
+				distance.x += xoffset;
+				distance.y += yoffset;
+			}
 			distance -= new Vector3(Screen.width/2, Screen.height/2, 0);
 			distance /= wobblyness;
 			Vector3 planeDistance = new Vector3 (distance.x, distance.y, 0);

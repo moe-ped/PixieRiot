@@ -11,7 +11,9 @@ public class Player : MonoBehaviour {
 	
 	public float ammoOffset;
 	
-	public float strength;
+	public float maxStrength = 10;
+
+	public float strength = 0;
 	
 	public float sidebounds;
 	
@@ -21,6 +23,9 @@ public class Player : MonoBehaviour {
 
 	public Transform crosshair;
 	public Transform activeCrosshair;
+	public Transform coneSprite;
+	public Transform[] activeCone = new Transform[10];
+	public float coneLength = 3;
 	
 	//test
 	public Particle testparticle;
@@ -61,6 +66,36 @@ public class Player : MonoBehaviour {
 			Destroy(activeCrosshair.gameObject);
 		}
 	}
+
+	public void cone () {
+		int current = (int) Mathf.Round(activeCone.Length * (strength/maxStrength) - 1);
+		Vector3 position = transform.position + (coneLength * (strength/maxStrength) * Vector3.Normalize(Input.mousePosition - Camera.main.WorldToScreenPoint (transform.position)));
+		if (current > activeCone.Length) {
+			current = activeCone.Length;
+		}
+		if (activeCone[current]) {
+			Destroy(activeCone[current].gameObject);
+		}
+		activeCone[current] = (Transform) Instantiate(coneSprite, position, Quaternion.identity);
+		activeCone[current].localScale = new Vector3(0.2f + strength/maxStrength, 0.2f + strength/maxStrength, 1);
+		//follow
+		for (int i=0; i<activeCone.Length; i++) {
+			if (activeCone[i]) {
+				float distance = Vector3.Distance(activeCone[i].position, transform.position);
+				Vector3 direction = Vector3.Normalize(Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position));
+				Vector3 iPosition = transform.position + direction * distance;
+				activeCone[i].position = iPosition;
+			}
+		}
+	}
+
+	void destroyCone () {
+		for (int i=0; i<activeCone.Length; i++) {
+			if (activeCone[i]) {
+				Destroy(activeCone[i].gameObject);
+			}
+		}
+	}
 	
 	public void shoot () {
 		Main main = Camera.main.GetComponent("Main") as Main;
@@ -72,7 +107,18 @@ public class Player : MonoBehaviour {
 		
 		Vector2 force2d = aimPoint - new Vector2(screenPosition.x, screenPosition.y);
 
-		if (Input.GetKeyDown(KeyCode.Mouse0)) {
+		if (Input.GetKey(KeyCode.Mouse0)) {
+			if (strength < maxStrength) {
+				strength += maxStrength * Time.deltaTime;
+			}
+			else {
+				strength = maxStrength;
+			}
+			cone ();
+			Debug.Log (Mathf.Round(strength/maxStrength * 100));
+		}
+
+		if (Input.GetKeyUp(KeyCode.Mouse0)) {
 
 			main.shotForce = force2d.normalized * strength;
 			
@@ -86,7 +132,8 @@ public class Player : MonoBehaviour {
 			Debug.Log(screenPosition);
 			Vector2 startPosition = force2d.normalized*ammoOffset;
 			Instantiate(ammo, transform.position + new Vector3(startPosition.x,startPosition.y, 0), initialAmmoRotation);
-			//main.turn = enemyID;
+			destroyCone ();
+			strength = 0;
 			tss = 0;
 			turn = false;
 		}

@@ -1,0 +1,45 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{F618D716-D17B-8CA6-378D-0697915BF1AB}") = "PixieRiot", "Assembly-CSharp-vs.csproj", "{84C5187B-450A-ABE7-0600-90B0814BCF24}"
+EndProject
+Project("{F618D716-D17B-8CA6-378D-0697915BF1AB}") = "PixieRiot", "Assembly-CSharp-Editor-vs.csproj", "{A394B681-66E5-29A2-7E89-3740EF349B22}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84C5187B-450A-ABE7-0600-90B0814BCF24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84C5187B-450A-ABE7-0600-90B0814BCF24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84C5187B-450A-ABE7-0600-90B0814BCF24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84C5187B-450A-ABE7-0600-90B0814BCF24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A394B681-66E5-29A2-7E89-3740EF349B22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A394B681-66E5-29A2-7E89-3740EF349B22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A394B681-66E5-29A2-7E89-3740EF349B22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A394B681-66E5-29A2-7E89-3740EF349B22}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+		GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.inheritsSet = null
+		$1.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $2
+		$2.inheritsSet = Mono
+		$2.inheritsScope = text/x-csharp
+		$2.scope = text/x-csharp
+		$0.TextStylePolicy = $3
+		$3.FileWidth = 120
+		$3.TabWidth = 4
+		$3.EolMarker = Unix
+		$3.inheritsSet = Mono
+		$3.inheritsScope = text/plain
+		$3.scope = text/plain
+	EndGlobalSection
+
+EndGlobal
