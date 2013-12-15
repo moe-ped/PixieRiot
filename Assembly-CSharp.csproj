@@ -127,6 +127,7 @@
      <Compile Include="Assets\scripts\Arrow.cs" />
      <Compile Include="Assets\scripts\CameraMovement.cs" />
      <Compile Include="Assets\scripts\Cookie.cs" />
+     <Compile Include="Assets\scripts\Dust.cs" />
      <Compile Include="Assets\scripts\Ground.cs" />
      <Compile Include="Assets\scripts\Main.cs" />
      <Compile Include="Assets\scripts\Player.cs" />
