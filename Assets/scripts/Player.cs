@@ -6,6 +6,11 @@ public class Player : MonoBehaviour {
 	public string name;
 	
 	public bool turn;
+
+	public AudioClip hitSound;
+	public AudioClip throwSound;
+	public AudioClip chargeThrowSound;
+	public AudioClip[] selectSound;
 	
 	public Transform ammo;
 	
@@ -38,6 +43,10 @@ public class Player : MonoBehaviour {
 	void OnCollisionEnter2D (Collision2D other) {
 		Main main = Camera.main.GetComponent("Main") as Main;
 		if (other.relativeVelocity.magnitude > 10) {
+			audio.PlayOneShot(hitSound);
+			if (turn) {
+				main.changeTurn ();
+			}
 			Destroy(gameObject);
 		}
 	}
@@ -59,7 +68,7 @@ public class Player : MonoBehaviour {
 			Vector2 screenPosition = new Vector2(position.x, position.y);
 			
 			Vector2 pointer = aimPoint - new Vector2(screenPosition.x, screenPosition.y);
-			activeCrosshair.position = transform.position + new Vector3(pointer.normalized.x, pointer.normalized.y, 0);
+			activeCrosshair.position = transform.position + new Vector3(pointer.normalized.x, pointer.normalized.y, 0)*3;
 			activeCrosshair.right = pointer;
 		}
 		else if (activeCrosshair) {
@@ -70,8 +79,8 @@ public class Player : MonoBehaviour {
 	public void cone () {
 		int current = (int) Mathf.Round(activeCone.Length * (strength/maxStrength) - 1);
 		Vector3 position = transform.position + (coneLength * (strength/maxStrength) * Vector3.Normalize(Input.mousePosition - Camera.main.WorldToScreenPoint (transform.position)));
-		if (current > activeCone.Length) {
-			current = activeCone.Length;
+		if (current >= activeCone.Length - 1) {
+			current = activeCone.Length - 1;
 		}
 		if (activeCone[current]) {
 			Destroy(activeCone[current].gameObject);
@@ -85,6 +94,7 @@ public class Player : MonoBehaviour {
 				Vector3 direction = Vector3.Normalize(Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position));
 				Vector3 iPosition = transform.position + direction * distance;
 				activeCone[i].position = iPosition;
+				activeCone[i].gameObject.renderer.material.color = new Color (1 , 1- (strength/maxStrength), 0);
 			}
 		}
 	}
@@ -107,6 +117,10 @@ public class Player : MonoBehaviour {
 		
 		Vector2 force2d = aimPoint - new Vector2(screenPosition.x, screenPosition.y);
 
+		if (Input.GetKeyDown(KeyCode.Mouse0)) {
+			audio.PlayOneShot(chargeThrowSound);
+		}
+
 		if (Input.GetKey(KeyCode.Mouse0)) {
 			if (strength < maxStrength) {
 				strength += maxStrength * Time.deltaTime;
@@ -115,10 +129,11 @@ public class Player : MonoBehaviour {
 				strength = maxStrength;
 			}
 			cone ();
-			Debug.Log (Mathf.Round(strength/maxStrength * 100));
 		}
 
 		if (Input.GetKeyUp(KeyCode.Mouse0)) {
+
+			audio.PlayOneShot(throwSound);
 
 			main.shotForce = force2d.normalized * strength;
 			
@@ -129,9 +144,9 @@ public class Player : MonoBehaviour {
 			float initialAmmoRotationZ = Vector2.Angle(Vector2.right, force2d) * prefix;
 			Quaternion initialAmmoRotation = Quaternion.Euler (0, 0, initialAmmoRotationZ);
 
-			Debug.Log(screenPosition);
 			Vector2 startPosition = force2d.normalized*ammoOffset;
 			Instantiate(ammo, transform.position + new Vector3(startPosition.x,startPosition.y, 0), initialAmmoRotation);
+			main.turnTime = 100;
 			destroyCone ();
 			strength = 0;
 			tss = 0;
@@ -160,8 +175,11 @@ public class Player : MonoBehaviour {
 			tss = -1;
 		}
 		
-		if (transform.position.x > sidebounds || transform.position.x < -sidebounds || transform.position.y < lowbounds) {
-				Destroy(gameObject);	
+		if (transform.position.y < lowbounds) {
+			if (turn) {
+				main.changeTurn ();
+			}
+			Destroy(gameObject);	
 		}
 		
 		if (turn) {

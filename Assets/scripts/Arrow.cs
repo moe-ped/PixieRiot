@@ -18,9 +18,8 @@ public class Arrow : MonoBehaviour {
 		rigidbody2D.AddForce(main.shotForce);
 	}
 	
-	void OnTriggerEnter2D (Collider2D other) {
+	void OnCollisionEnter2D (Collision2D other) {
 		other.gameObject.rigidbody2D.AddForce(rigidbody2D.velocity * impact);
-		Debug.Log("ouch");
 		if (lifetime() > 0.04) {
 			//Destroy(rigidbody2D);
 			//transform.parent = other.transform;

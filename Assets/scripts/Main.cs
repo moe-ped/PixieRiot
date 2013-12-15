@@ -10,13 +10,13 @@ using System.Collections;
 	}
 
 public class Main : MonoBehaviour {
-	
+
 	public Vector2 shotForce = Vector2.zero;
 
 	public float turnTime;
 	public float timePerTurn = 30;
 	
-	public int turn = 1;
+	public int turn = 0;
 	
 	public int[] player = new int[2];
 	
@@ -48,16 +48,17 @@ public class Main : MonoBehaviour {
 	}
 
 	public void countdown () {
-		turnTime -= Time.deltaTime;
+		if (turnTime <= timePerTurn) {
+			turnTime -= Time.deltaTime;
+		}
 	}
 
 	public IEnumerator changeTurnCo () {
-		deselectAll ();
 		yield return new WaitForSeconds (0.2f);
+		deselectAll ();
 		int turn0 = turn;
 		turn++;
 		if (turn >= teams.Length) {
-					Debug.Log("ololol");
 					turn = 0;
 			}
 		while (teams[turn] == null) {
@@ -66,37 +67,33 @@ public class Main : MonoBehaviour {
 				turn = 0;
 			}
 			if (turn0 == turn){
-				Debug.Log("Team" + turn+1 + "wins");
+
 				//yield return;
 			}
 		}
-		Debug.Log("roundend");
 		changePlayer ();
 	}
 	
 	public void changePlayer () {
 		player[turn]++;
-		if (player[turn] >= teams[turn].players.Length) {
-				Debug.Log("lol");
-				player[turn] = 0;
-		}
 		int i = 0;
+		if (player[turn] >= teams[turn].players.Length) {
+			player[turn] = 0;
+		}
 		while (teams[turn].players[player[turn]] == null) {
 			player[turn]++;
 			if (player[turn] >= teams[turn].players.Length) {
 				player[turn] = 0;
 			}
 			if (i >= teams[turn].players.Length){
-				teams[turn] = null;
-				changeTurn();
+				//win?
 				return;
 			}
 			i++;
 		}
 		Player playerscript = teams[turn].players[player[turn]].GetComponent("Player") as Player;
+		playerscript.audio.PlayOneShot(playerscript.selectSound[Random.Range(0, 9)]);
 		playerscript.turn = true;
-		Debug.Log(teams[turn].players[player[turn]]);
-		Debug.Log(turn);
 	}
 
 	public void settarget (GameObject target) {
@@ -106,9 +103,19 @@ public class Main : MonoBehaviour {
 
 	void deselectAll () {
 		for (int t=0; t < teams.Length; t++) {
+			int remaining = teams[t].players.Length;
 			for (int p=0; p < teams[t].players.Length; p++) {
-				Player playerscript = teams[t].players[p].GetComponent("Player") as Player;
-				playerscript.turn = false;
+				if (teams[t].players[p]) {
+					Player playerscript = teams[t].players[p].GetComponent("Player") as Player;
+					playerscript.turn = false;
+				}
+				else {
+					remaining --;
+				}
+				Debug.Log("Team " + t + ": " + remaining + " remaining");
+				if (remaining <= 0) {
+					Application.LoadLevel("Win" + (2-t));
+				}
 			}
 		}
 	}
@@ -151,6 +158,7 @@ public class Main : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		audio.Play();
 		turnTime = timePerTurn;
 		changeTurn ();
 	}
