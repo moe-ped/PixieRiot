@@ -1,16 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\Cookie.cs">
     <Files>
-      <File FileName="Assets\scripts\Player.cs" Line="182" Column="4" />
-      <File FileName="Assets\scripts\CameraMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\Arrow.cs" Line="21" Column="36" />
-      <File FileName="Assets\scripts\Main.cs" Line="117" Column="41" />
-      <File FileName="Assets\scripts\Cookie.cs" Line="12" Column="4" />
-      <File FileName="Assets\scripts\buttons\Timer.cs" Line="17" Column="19" />
-      <File FileName="Assets\scripts\Ground.cs" Line="9" Column="3" />
-      <File FileName="Assets\scripts\buttons\SettingsButton.cs" Line="7" Column="30" />
-      <File FileName="Assets\scripts\buttons\QuitButton.cs" Line="8" Column="3" />
+      <File FileName="Assets\scripts\Cookie.cs" Line="35" Column="62" />
+      <File FileName="Assets\scripts\Player.cs" Line="197" Column="63" />
+      <File FileName="Assets\scripts\Arrow.cs" Line="12" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
