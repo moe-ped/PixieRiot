@@ -20,7 +20,7 @@ public class UISpriteAnimation : MonoBehaviour
 
 	UISprite mSprite;
 	float mDelta = 0f;
-	int mIndex = 0;
+	public int mIndex = 0;
 	List<string> mSpriteNames = new List<string>();
 
 	/// <summary>
@@ -55,7 +55,7 @@ public class UISpriteAnimation : MonoBehaviour
 			if (rate < mDelta)
 			{
 				mDelta = (rate > 0f) ? mDelta - rate : 0f;
-				if (++mIndex >= mSpriteNames.Count) mIndex = 0;
+				if (++mIndex >= mSpriteNames.Count) return;
 				mSprite.spriteName = mSpriteNames[mIndex];
 				mSprite.MakePixelPerfect();
 			}
