@@ -13,7 +13,7 @@ Platform assembly: C:\Users\Moritz\PixieRiot\Pixie Riot_Data\Managed\Assembly-CS
 Loading C:\Users\Moritz\PixieRiot\Pixie Riot_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: C:\Users\Moritz\PixieRiot\Pixie Riot_Data\Managed\NGUI.dll (this message is harmless)
 Loading C:\Users\Moritz\PixieRiot\Pixie Riot_Data\Managed\NGUI.dll into Unity Child Domain
-- Completed reload, in  0.171 seconds
+- Completed reload, in  0.172 seconds
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -22,11 +22,11 @@ The referenced script on this Behaviour is missing!
  
 (Filename:  Line: 1699)
 
-UnloadTime: 3.523049 ms
+UnloadTime: 4.452381 ms
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 711.
-Total: 1.587506 ms (FindLiveObjects: 0.037089 ms CreateObjectMapping: 0.018544 ms MarkObjects: 0.463615 ms  DeleteObjects: 0.192777 ms)
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 722.
+Total: 2.464680 ms (FindLiveObjects: 0.063395 ms CreateObjectMapping: 0.023719 ms MarkObjects: 0.506305 ms  DeleteObjects: 1.297245 ms)
 
 IndexOutOfRangeException: Array index is out of range.
   at Player.cone () [0x00000] in <filename unknown>:0 
@@ -56,38 +56,31 @@ IndexOutOfRangeException: Array index is out of range.
  
 (Filename:  Line: -1)
 
-IndexOutOfRangeException: Array index is out of range.
-  at Player.cone () [0x00000] in <filename unknown>:0 
-  at Player.shoot () [0x00000] in <filename unknown>:0 
-  at Player.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
+UnloadTime: 1.647432 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-UnloadTime: 1.685405 ms
+Unloading 621 unused Assets to reduce memory usage. Loaded Objects now: 309.
+Total: 6.449139 ms (FindLiveObjects: 0.062964 ms CreateObjectMapping: 0.103072 ms MarkObjects: 0.284635 ms  DeleteObjects: 5.373132 ms)
+
+UnloadTime: 0.454984 ms
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 839 unused Assets to reduce memory usage. Loaded Objects now: 306.
-Total: 7.605456 ms (FindLiveObjects: 0.054771 ms CreateObjectMapping: 0.117736 ms MarkObjects: 0.262643 ms  DeleteObjects: 6.267655 ms)
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 307.
+Total: 0.910400 ms (FindLiveObjects: 0.022425 ms CreateObjectMapping: 0.015525 ms MarkObjects: 0.271265 ms  DeleteObjects: 0.007331 ms)
 
-UnloadTime: 0.465340 ms
+UnloadTime: 0.499836 ms
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 304.
-Total: 0.816395 ms (FindLiveObjects: 0.015525 ms CreateObjectMapping: 0.014663 ms MarkObjects: 0.254880 ms  DeleteObjects: 0.005606 ms)
-
-UnloadTime: 0.457146 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 304.
-Total: 0.814238 ms (FindLiveObjects: 0.017250 ms CreateObjectMapping: 0.015094 ms MarkObjects: 0.257899 ms  DeleteObjects: 0.005606 ms)
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 307.
+Total: 0.802153 ms (FindLiveObjects: 0.020700 ms CreateObjectMapping: 0.015094 ms MarkObjects: 0.268678 ms  DeleteObjects: 0.005606 ms)
 
 The referenced script on this Behaviour is missing!
  
 (Filename:  Line: 1699)
 
-UnloadTime: 0.658981 ms
+UnloadTime: 0.962583 ms
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 293.
-Total: 1.030736 ms (FindLiveObjects: 0.016819 ms CreateObjectMapping: 0.015094 ms MarkObjects: 0.249274 ms  DeleteObjects: 0.143613 ms)
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 320.
+Total: 1.210992 ms (FindLiveObjects: 0.039676 ms CreateObjectMapping: 0.015956 ms MarkObjects: 0.331211 ms  DeleteObjects: 0.202694 ms)
 
