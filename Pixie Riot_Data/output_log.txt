@@ -13,8 +13,8 @@ Platform assembly: C:\Users\Moritz\PixieRiot\Pixie Riot_Data\Managed\Assembly-CS
 Loading C:\Users\Moritz\PixieRiot\Pixie Riot_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: C:\Users\Moritz\PixieRiot\Pixie Riot_Data\Managed\NGUI.dll (this message is harmless)
 Loading C:\Users\Moritz\PixieRiot\Pixie Riot_Data\Managed\NGUI.dll into Unity Child Domain
-- Completed reload, in  0.172 seconds
-desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+- Completed reload, in  0.210 seconds
+desktop: 1680x1050 59Hz; virtual: 1680x1050 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 Platform assembly: C:\Users\Moritz\PixieRiot\Pixie Riot_Data\Managed\System.dll (this message is harmless)
@@ -22,65 +22,96 @@ The referenced script on this Behaviour is missing!
  
 (Filename:  Line: 1699)
 
-UnloadTime: 4.452381 ms
+You are trying to load data from a www stream which had the following error when downloading.
+Could not resolve host: www.tasharen.com; Host not found
+ 
+(Filename:  Line: 1066)
+
+UnloadTime: 3.464812 ms
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 722.
-Total: 2.464680 ms (FindLiveObjects: 0.063395 ms CreateObjectMapping: 0.023719 ms MarkObjects: 0.506305 ms  DeleteObjects: 1.297245 ms)
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 759.
+Total: 3.077533 ms (FindLiveObjects: 0.038814 ms CreateObjectMapping: 0.020700 ms MarkObjects: 0.417468 ms  DeleteObjects: 1.975210 ms)
 
-IndexOutOfRangeException: Array index is out of range.
-  at Player.cone () [0x00000] in <filename unknown>:0 
-  at Player.shoot () [0x00000] in <filename unknown>:0 
-  at Player.Update () [0x00000] in <filename unknown>:0 
+You are trying to load data from a www stream which had the following error when downloading.
+Could not resolve host: www.tasharen.com; Host not found
  
-(Filename:  Line: -1)
+(Filename:  Line: 1066)
 
-IndexOutOfRangeException: Array index is out of range.
-  at Player.cone () [0x00000] in <filename unknown>:0 
-  at Player.shoot () [0x00000] in <filename unknown>:0 
-  at Player.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at Player.cone () [0x00000] in <filename unknown>:0 
-  at Player.shoot () [0x00000] in <filename unknown>:0 
-  at Player.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at Player.cone () [0x00000] in <filename unknown>:0 
-  at Player.shoot () [0x00000] in <filename unknown>:0 
-  at Player.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnloadTime: 1.647432 ms
+UnloadTime: 1.518065 ms
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 621 unused Assets to reduce memory usage. Loaded Objects now: 309.
-Total: 6.449139 ms (FindLiveObjects: 0.062964 ms CreateObjectMapping: 0.103072 ms MarkObjects: 0.284635 ms  DeleteObjects: 5.373132 ms)
+Unloading 650 unused Assets to reduce memory usage. Loaded Objects now: 309.
+Total: 6.278409 ms (FindLiveObjects: 0.050889 ms CreateObjectMapping: 0.148356 ms MarkObjects: 0.287656 ms  DeleteObjects: 5.194200 ms)
 
-UnloadTime: 0.454984 ms
+UnloadTime: 0.420055 ms
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
 Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 307.
-Total: 0.910400 ms (FindLiveObjects: 0.022425 ms CreateObjectMapping: 0.015525 ms MarkObjects: 0.271265 ms  DeleteObjects: 0.007331 ms)
+Total: 0.843561 ms (FindLiveObjects: 0.015525 ms CreateObjectMapping: 0.015525 ms MarkObjects: 0.280755 ms  DeleteObjects: 0.004312 ms)
 
-UnloadTime: 0.499836 ms
+UnloadTime: 0.439894 ms
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
 Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 307.
-Total: 0.802153 ms (FindLiveObjects: 0.020700 ms CreateObjectMapping: 0.015094 ms MarkObjects: 0.268678 ms  DeleteObjects: 0.005606 ms)
+Total: 0.793534 ms (FindLiveObjects: 0.016819 ms CreateObjectMapping: 0.015094 ms MarkObjects: 0.245391 ms  DeleteObjects: 0.005175 ms)
+
+You are trying to load data from a www stream which had the following error when downloading.
+Could not resolve host: www.tasharen.com; Host not found
+ 
+(Filename:  Line: 1066)
 
 The referenced script on this Behaviour is missing!
  
 (Filename:  Line: 1699)
 
-UnloadTime: 0.962583 ms
+UnloadTime: 0.677954 ms
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 320.
-Total: 1.210992 ms (FindLiveObjects: 0.039676 ms CreateObjectMapping: 0.015956 ms MarkObjects: 0.331211 ms  DeleteObjects: 0.202694 ms)
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 296.
+Total: 0.940165 ms (FindLiveObjects: 0.016388 ms CreateObjectMapping: 0.015525 ms MarkObjects: 0.248410 ms  DeleteObjects: 0.146200 ms)
+
+UnloadTime: 10657.494141 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 734.
+Total: 1.198495 ms (FindLiveObjects: 0.030188 ms CreateObjectMapping: 0.022425 ms MarkObjects: 0.386848 ms  DeleteObjects: 0.223397 ms)
+
+You are trying to load data from a www stream which had the following error when downloading.
+Could not resolve host: www.tasharen.com; Host not found
+ 
+(Filename:  Line: 1066)
+
+UnloadTime: 1.335639 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 552 unused Assets to reduce memory usage. Loaded Objects now: 309.
+Total: 5.511182 ms (FindLiveObjects: 0.032776 ms CreateObjectMapping: 0.076334 ms MarkObjects: 0.357521 ms  DeleteObjects: 4.487782 ms)
+
+UnloadTime: 0.441187 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 307.
+Total: 0.801728 ms (FindLiveObjects: 0.015525 ms CreateObjectMapping: 0.016388 ms MarkObjects: 0.257898 ms  DeleteObjects: 0.004312 ms)
+
+UnloadTime: 0.430837 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 307.
+Total: 0.912133 ms (FindLiveObjects: 0.015956 ms CreateObjectMapping: 0.016819 ms MarkObjects: 0.329058 ms  DeleteObjects: 0.005175 ms)
+
+You are trying to load data from a www stream which had the following error when downloading.
+Could not resolve host: www.tasharen.com; Host not found
+ 
+(Filename:  Line: 1066)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1699)
+
+UnloadTime: 0.490783 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 296.
+Total: 0.941890 ms (FindLiveObjects: 0.015956 ms CreateObjectMapping: 0.017250 ms MarkObjects: 0.266524 ms  DeleteObjects: 0.139299 ms)
 
