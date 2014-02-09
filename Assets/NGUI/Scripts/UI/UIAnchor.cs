@@ -31,7 +31,8 @@ public class UIAnchor : MonoBehaviour
     public Side side = Side.Center;
     public bool halfPixelOffset = true;
     public float depthOffset = 0f;
-    public Vector2 relativeOffset = Vector2.zero;
+	public Vector2 relativeOffset = Vector2.zero;
+	public Vector2 inverseRelativeOffset = Vector2.zero;
 
     // Stretching is now done by a separate script -- UIStretch, as of version 1.90.
     [HideInInspector]
@@ -121,8 +122,12 @@ public class UIAnchor : MonoBehaviour
             float screenWidth = rect.width;
             float screenHeight = rect.height;
 
-            v.x += relativeOffset.x * screenWidth;
-            v.y += relativeOffset.y * screenHeight;
+			v.x += relativeOffset.x * screenWidth;
+			v.y += relativeOffset.y * screenHeight;
+
+			//changed by me
+			v.x += inverseRelativeOffset.x * screenHeight;
+			v.y += inverseRelativeOffset.y * screenWidth;
 
             if (uiCamera.orthographic)
             {

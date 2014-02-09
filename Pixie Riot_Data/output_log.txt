@@ -1,117 +1,58 @@
-Initialize engine version: 4.3.1f1 (cebd4d9b5122)
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
 GfxDevice: creating device client; threaded=1
 Direct3D:
-    Version:  Direct3D 9.0c [igdumdx32.dll 8.15.10.2622]
-    Renderer: Intel(R) HD Graphics
+    Version:  Direct3D 9.0c [igdumdim32.dll 10.18.10.3379]
+    Renderer: Intel(R) HD Graphics 4600
     Vendor:   Intel
-    VRAM:     880 MB (via DXGI)
+    VRAM:     912 MB (via DXGI)
     Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=1 INTZ=1 RAWZ=0 NULL=1 RESZ=1 SlowINTZ=0
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Moritz\PixieRiot\Pixie Riot_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Moritz\PixieRiot\Pixie Riot_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Moritz\PixieRiot\Pixie Riot_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Moritz\PixieRiot\Pixie Riot_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Moritz\PixieRiot\Pixie Riot_Data\Managed\NGUI.dll (this message is harmless)
-Loading C:\Users\Moritz\PixieRiot\Pixie Riot_Data\Managed\NGUI.dll into Unity Child Domain
-- Completed reload, in  0.210 seconds
+Platform assembly: C:\Users\Moritz\Documents\GitHub\PixieRiot\Pixie Riot_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Moritz\Documents\GitHub\PixieRiot\Pixie Riot_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Moritz\Documents\GitHub\PixieRiot\Pixie Riot_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Moritz\Documents\GitHub\PixieRiot\Pixie Riot_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Moritz\Documents\GitHub\PixieRiot\Pixie Riot_Data\Managed\NGUI.dll (this message is harmless)
+Loading C:\Users\Moritz\Documents\GitHub\PixieRiot\Pixie Riot_Data\Managed\NGUI.dll into Unity Child Domain
+- Completed reload, in  0.040 seconds
 desktop: 1680x1050 59Hz; virtual: 1680x1050 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-Platform assembly: C:\Users\Moritz\PixieRiot\Pixie Riot_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\Moritz\Documents\GitHub\PixieRiot\Pixie Riot_Data\Managed\System.dll (this message is harmless)
 The referenced script on this Behaviour is missing!
  
 (Filename:  Line: 1699)
 
-You are trying to load data from a www stream which had the following error when downloading.
-Could not resolve host: www.tasharen.com; Host not found
- 
-(Filename:  Line: 1066)
-
-UnloadTime: 3.464812 ms
+UnloadTime: 7.779898 ms
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 759.
-Total: 3.077533 ms (FindLiveObjects: 0.038814 ms CreateObjectMapping: 0.020700 ms MarkObjects: 0.417468 ms  DeleteObjects: 1.975210 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 704.
+Total: 2.926815 ms (FindLiveObjects: 0.106610 ms CreateObjectMapping: 0.059264 ms MarkObjects: 0.577085 ms  DeleteObjects: 0.354594 ms)
 
-You are trying to load data from a www stream which had the following error when downloading.
-Could not resolve host: www.tasharen.com; Host not found
- 
-(Filename:  Line: 1066)
-
-UnloadTime: 1.518065 ms
+UnloadTime: 1.925937 ms
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 650 unused Assets to reduce memory usage. Loaded Objects now: 309.
-Total: 6.278409 ms (FindLiveObjects: 0.050889 ms CreateObjectMapping: 0.148356 ms MarkObjects: 0.287656 ms  DeleteObjects: 5.194200 ms)
+Unloading 238 unused Assets to reduce memory usage. Loaded Objects now: 268.
+Total: 11.275190 ms (FindLiveObjects: 0.029797 ms CreateObjectMapping: 0.068535 ms MarkObjects: 0.339033 ms  DeleteObjects: 9.782978 ms)
 
-UnloadTime: 0.420055 ms
+UnloadTime: 1.070075 ms
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 307.
-Total: 0.843561 ms (FindLiveObjects: 0.015525 ms CreateObjectMapping: 0.015525 ms MarkObjects: 0.280755 ms  DeleteObjects: 0.004312 ms)
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 266.
+Total: 1.659411 ms (FindLiveObjects: 0.028142 ms CreateObjectMapping: 0.022513 ms MarkObjects: 0.409224 ms  DeleteObjects: 0.008939 ms)
 
-UnloadTime: 0.439894 ms
+UnloadTime: 0.679391 ms
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 307.
-Total: 0.793534 ms (FindLiveObjects: 0.016819 ms CreateObjectMapping: 0.015094 ms MarkObjects: 0.245391 ms  DeleteObjects: 0.005175 ms)
-
-You are trying to load data from a www stream which had the following error when downloading.
-Could not resolve host: www.tasharen.com; Host not found
- 
-(Filename:  Line: 1066)
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 266.
+Total: 1.656100 ms (FindLiveObjects: 0.029466 ms CreateObjectMapping: 0.022513 ms MarkObjects: 0.411541 ms  DeleteObjects: 0.007946 ms)
 
 The referenced script on this Behaviour is missing!
  
 (Filename:  Line: 1699)
 
-UnloadTime: 0.677954 ms
+UnloadTime: 33.954697 ms
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 296.
-Total: 0.940165 ms (FindLiveObjects: 0.016388 ms CreateObjectMapping: 0.015525 ms MarkObjects: 0.248410 ms  DeleteObjects: 0.146200 ms)
-
-UnloadTime: 10657.494141 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 734.
-Total: 1.198495 ms (FindLiveObjects: 0.030188 ms CreateObjectMapping: 0.022425 ms MarkObjects: 0.386848 ms  DeleteObjects: 0.223397 ms)
-
-You are trying to load data from a www stream which had the following error when downloading.
-Could not resolve host: www.tasharen.com; Host not found
- 
-(Filename:  Line: 1066)
-
-UnloadTime: 1.335639 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 552 unused Assets to reduce memory usage. Loaded Objects now: 309.
-Total: 5.511182 ms (FindLiveObjects: 0.032776 ms CreateObjectMapping: 0.076334 ms MarkObjects: 0.357521 ms  DeleteObjects: 4.487782 ms)
-
-UnloadTime: 0.441187 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 307.
-Total: 0.801728 ms (FindLiveObjects: 0.015525 ms CreateObjectMapping: 0.016388 ms MarkObjects: 0.257898 ms  DeleteObjects: 0.004312 ms)
-
-UnloadTime: 0.430837 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 307.
-Total: 0.912133 ms (FindLiveObjects: 0.015956 ms CreateObjectMapping: 0.016819 ms MarkObjects: 0.329058 ms  DeleteObjects: 0.005175 ms)
-
-You are trying to load data from a www stream which had the following error when downloading.
-Could not resolve host: www.tasharen.com; Host not found
- 
-(Filename:  Line: 1066)
-
-The referenced script on this Behaviour is missing!
- 
-(Filename:  Line: 1699)
-
-UnloadTime: 0.490783 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 296.
-Total: 0.941890 ms (FindLiveObjects: 0.015956 ms CreateObjectMapping: 0.017250 ms MarkObjects: 0.266524 ms  DeleteObjects: 0.139299 ms)
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 301.
+Total: 1.518036 ms (FindLiveObjects: 0.027811 ms CreateObjectMapping: 0.019534 ms MarkObjects: 0.346648 ms  DeleteObjects: 0.179780 ms)
 
