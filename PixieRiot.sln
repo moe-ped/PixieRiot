@@ -5,6 +5,8 @@ Project("{F618D716-D17B-8CA6-378D-0697915BF1AB}") = "PixieRiot", "Assembly-CShar
 EndProject
 Project("{F618D716-D17B-8CA6-378D-0697915BF1AB}") = "PixieRiot", "Assembly-CSharp-Editor.csproj", "{A394B681-66E5-29A2-7E89-3740EF349B22}"
 EndProject
+Project("{F618D716-D17B-8CA6-378D-0697915BF1AB}") = "PixieRiot", "Assembly-UnityScript.unityproj", "{A3494D63-9D35-AB54-80D7-5AE800F03582}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,11 +21,15 @@ Global
 		{A394B681-66E5-29A2-7E89-3740EF349B22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A394B681-66E5-29A2-7E89-3740EF349B22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A394B681-66E5-29A2-7E89-3740EF349B22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3494D63-9D35-AB54-80D7-5AE800F03582}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3494D63-9D35-AB54-80D7-5AE800F03582}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3494D63-9D35-AB54-80D7-5AE800F03582}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3494D63-9D35-AB54-80D7-5AE800F03582}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																																					GlobalSection(MonoDevelopProperties) = preSolution
+																																																																																		GlobalSection(MonoDevelopProperties) = preSolution
 																												GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
