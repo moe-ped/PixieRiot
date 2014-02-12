@@ -3,14 +3,24 @@ using System.Collections;
 
 //container class for teams
 [System.Serializable]
-	public class Teams
-	{
-		public string name;
-		public GameObject[] players;
-		public float score;
-	}
+public class Teams
+{
+	public string name;
+	public GameObject[] players;
+	public float score;
+	public int selectedWeapon = 0;
+}
+
+[System.Serializable]
+public class Ammo
+{
+	public Transform projectile;
+	public Sprite icon;
+}
 
 public class Main : MonoBehaviour {
+
+	public Ammo[] weapons;
 
 	public AudioClip pixyDieSound;
 	public AudioClip cookieDieSound;
@@ -104,6 +114,7 @@ public class Main : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		Screen.showCursor = false;
 		audio.Play();
 		turnTime = timePerTurn;
 		//changeTurn ();
