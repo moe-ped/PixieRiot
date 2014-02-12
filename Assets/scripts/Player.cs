@@ -14,8 +14,6 @@ public class Player : MonoBehaviour {
 	public AudioClip chargeThrowSound;
 	public AudioClip[] selectSound;
 	
-	public Transform ammo;
-	
 	public float ammoOffset;
 	
 	public float maxStrength = 10;
@@ -119,6 +117,8 @@ public class Player : MonoBehaviour {
 	
 	public void shoot () {
 		Main main = Camera.main.GetComponent("Main") as Main;
+
+		Transform ammo = main.weapons[main.teams[main.turn].selectedWeapon].projectile;
 
 		Vector2 aimPoint = Input.mousePosition;
 		
