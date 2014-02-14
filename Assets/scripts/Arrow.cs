@@ -6,6 +6,11 @@ public class Arrow : MonoBehaviour {
 	public float sidebounds;
 	
 	public float lowbounds; 
+
+	public string type;
+	public float explosionRadius = 3;
+	public float explosionForce = 5;
+	public Transform explosionPrefab;
 	
 	public float lt;
 
@@ -19,7 +24,21 @@ public class Arrow : MonoBehaviour {
 		main.settarget(gameObject);
 		rigidbody2D.velocity = main.shotForce/40;
 	}
-	
+
+	void OnDestroy () {
+		if (type == "explosive") {
+			Debug.Log ("boom");
+			Transform explosion = (Transform)Instantiate (explosionPrefab, transform.position, Quaternion.identity);
+			CircleCollider2D circle = explosion.GetComponent("CircleCollider2D") as CircleCollider2D;
+			circle.radius = explosionRadius;
+			Explosion eScript = explosion.gameObject.GetComponent("Explosion") as Explosion;
+			eScript.explosionForce = explosionForce;
+		}
+		Main main = Camera.main.GetComponent("Main") as Main;
+		main.changeTurn();
+		main.turnTime = main.timePerTurn;
+	}
+
 	void OnCollisionEnter2D (Collision2D other) {
 		if (!other.gameObject.GetComponent ("Ground")) {
 			//other.gameObject.rigidbody2D.velocity = (rigidbody2D.velocity.normalized * impact)/10 + new Vector2 (rigidbody2D.velocity.x, 0).normalized;
@@ -32,10 +51,11 @@ public class Arrow : MonoBehaviour {
 	}
 	
 	public void die () {
-		Main main = Camera.main.GetComponent("Main") as Main;
-		main.changeTurn();
-		main.turnTime = main.timePerTurn;
-		Destroy(gameObject, 0.01f);
+		float deathDelay = 0.01f;
+		if (type == "explosive") {
+			deathDelay = 3;
+		}
+		Destroy(gameObject, deathDelay);
 	}
 	
 	public float lifetime () {
@@ -64,6 +84,20 @@ public class Arrow : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if (type == "rc") {
+			if (rigidbody2D.velocity.y < 0 && rigidbody2D.gravityScale != 10) {
+				Vector2 newVelocity = new Vector2(rigidbody2D.velocity.x, 0);
+				Debug.Log("rc activate" + newVelocity);
+				newVelocity = newVelocity.normalized;
+				rigidbody2D.gravityScale = 0;
+				rigidbody2D.velocity = newVelocity*10;
+			}
+			if (Input.GetKeyDown(KeyCode.Mouse0)) {
+				rigidbody2D.gravityScale = 10;
+			}
+			/*if (rigidbody2D.velocity.y < -20) {
+				rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, -20);
+			}*/
+		}
 	}
 }

@@ -1,10 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\Player.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\Arrow.cs">
     <Files>
-      <File FileName="Assets\scripts\Main.cs" Line="11" Column="32" />
-      <File FileName="Assets\scripts\Arrow.cs" Line="21" Column="3" />
-      <File FileName="Assets\scripts\Player.cs" Line="121" Column="81" />
+      <File FileName="Assets\scripts\Arrow.cs" Line="88" Column="68" />
+      <File FileName="Assets\scripts\Explosion.cs" Line="15" Column="30" />
+      <File FileName="Assets\scripts\buttons\ShowCursor.cs" Line="8" Column="28" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
