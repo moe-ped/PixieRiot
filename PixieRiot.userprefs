@@ -1,10 +1,18 @@
 ﻿<Properties>
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\Arrow.cs">
     <Files>
       <File FileName="Assets\scripts\Arrow.cs" Line="88" Column="68" />
       <File FileName="Assets\scripts\Explosion.cs" Line="15" Column="30" />
       <File FileName="Assets\scripts\buttons\ShowCursor.cs" Line="8" Column="28" />
+=======
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\buttons\Fontstretch.cs">
+    <Files>
+      <File FileName="Assets\scripts\buttons\Border.cs" Line="19" Column="2" />
+      <File FileName="Assets\scripts\buttons\Fontstretch.cs" Line="11" Column="14" />
+>>>>>>> a7ec89a08ce052a81eb42214602df3edb646e268
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
