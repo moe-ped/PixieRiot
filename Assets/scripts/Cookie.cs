@@ -6,6 +6,12 @@ public class Cookie : MonoBehaviour {
 	public AudioClip hitSound;
 	public AudioClip crackSound;
 
+<<<<<<< HEAD
+	public Sprite damage1;
+	public Sprite damage2;
+
+=======
+>>>>>>> bdbafafcb80cd64fd895e891c41606f5c3c731b7
 	public Transform dust;
 
 	public int hp = 3;
@@ -29,6 +35,17 @@ public class Cookie : MonoBehaviour {
 					main.teams[0].score++;
 				}
 			}
+<<<<<<< HEAD
+			if (hp == 2 && damage1) {
+				SpriteRenderer spriterenderer = GetComponent("SpriteRenderer") as SpriteRenderer;
+				spriterenderer.sprite = damage1;
+			}
+			if (hp == 1 && damage2) {
+				SpriteRenderer spriterenderer = GetComponent("SpriteRenderer") as SpriteRenderer;
+				spriterenderer.sprite = damage2;
+			}
+=======
+>>>>>>> bdbafafcb80cd64fd895e891c41606f5c3c731b7
 			if (hp <= 0) {
 				Instantiate(dust, transform.position, Quaternion.identity);
 				float initVolume = main.audio.volume;
