@@ -126,6 +126,7 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
      <Compile Include="Assets\scripts\Arrow.cs" />
      <Compile Include="Assets\scripts\CameraMovement.cs" />
+     <Compile Include="Assets\scripts\CameraMovement_old.cs" />
      <Compile Include="Assets\scripts\Cookie.cs" />
      <Compile Include="Assets\scripts\Dust.cs" />
      <Compile Include="Assets\scripts\Explosion.cs" />
@@ -139,8 +140,6 @@
      <Compile Include="Assets\scripts\buttons\SettingsButton.cs" />
      <Compile Include="Assets\scripts\buttons\ShowCursor.cs" />
      <Compile Include="Assets\scripts\buttons\StartButton.cs" />
-     <Compile Include="Assets\scripts\buttons\Timer.cs" />
-     <Compile Include="Assets\scripts\buttons\TimeyWimey.cs" />
      <None Include="Assets\NGUI\Resources\Shaders\Depth.shader" />
      <None Include="Assets\gfx\gui\atlases\comixbmp.fnt" />
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
