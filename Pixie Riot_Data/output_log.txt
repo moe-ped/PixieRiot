@@ -15,7 +15,7 @@ Platform assembly: C:\Users\Moritz\Documents\GitHub\PixieRiot\Pixie Riot_Data\Ma
 Loading C:\Users\Moritz\Documents\GitHub\PixieRiot\Pixie Riot_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
 Platform assembly: C:\Users\Moritz\Documents\GitHub\PixieRiot\Pixie Riot_Data\Managed\NGUI.dll (this message is harmless)
 Loading C:\Users\Moritz\Documents\GitHub\PixieRiot\Pixie Riot_Data\Managed\NGUI.dll into Unity Child Domain
-- Completed reload, in  0.041 seconds
+- Completed reload, in  0.040 seconds
 desktop: 1680x1050 59Hz; virtual: 1680x1050 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -28,7 +28,7 @@ The referenced script on this Behaviour is missing!
  
 (Filename:  Line: 1699)
 
-UnloadTime: 6.654849 ms
+UnloadTime: 2.193451 ms
 The AnimationClip 'idle1' used by the Animation component 'Wurf' must be marked as Legacy.
  
 (Filename:  Line: 1998)
@@ -175,10 +175,62 @@ Default clip could not be found in attached animations list.
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1352.
-Total: 1.793498 ms (FindLiveObjects: 0.083765 ms CreateObjectMapping: 0.031453 ms MarkObjects: 0.410878 ms  DeleteObjects: 0.422467 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1392.
+Total: 1.156818 ms (FindLiveObjects: 0.045358 ms CreateObjectMapping: 0.013905 ms MarkObjects: 0.284403 ms  DeleteObjects: 0.356580 ms)
 
-rc activate(37.4, 0.0)
+boom
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+rc activate(-10.9, 0.0)
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+boom
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+rc activate(9.4, 0.0)
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+boom
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+rc activate(-10.7, 0.0)
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+boom
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+boom
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+rc activate(4.1, 0.0)
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+boom
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+boom
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+rc activate(8.1, 0.0)
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+boom
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+rc activate(5.6, 0.0)
  
 (Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
 
@@ -194,31 +246,11 @@ boom
  
 (Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
 
-rc activate(9.8, 0.0)
- 
-(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
-
 boom
  
 (Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
 
 boom
- 
-(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
-
-rc activate(3.9, 0.0)
- 
-(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
-
-boom
- 
-(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
-
-boom
- 
-(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
-
-rc activate(2.7, 0.0)
  
 (Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
 
@@ -238,9 +270,13 @@ The referenced script on this Behaviour is missing!
  
 (Filename:  Line: 1699)
 
-UnloadTime: 4.997758 ms
+boom
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+UnloadTime: 7.084600 ms
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 201 unused Assets to reduce memory usage. Loaded Objects now: 320.
-Total: 6.620747 ms (FindLiveObjects: 0.056946 ms CreateObjectMapping: 0.057940 ms MarkObjects: 0.566158 ms  DeleteObjects: 4.952399 ms)
+Unloading 205 unused Assets to reduce memory usage. Loaded Objects now: 332.
+Total: 8.950275 ms (FindLiveObjects: 0.058933 ms CreateObjectMapping: 0.058933 ms MarkObjects: 0.592314 ms  DeleteObjects: 6.601875 ms)
 
