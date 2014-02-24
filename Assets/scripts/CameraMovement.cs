@@ -47,7 +47,12 @@ public class CameraMovement : MonoBehaviour {
 	}
 
 	void smoothMove () {
-		transform.position = Vector3.Lerp (transform.position, position, 0.04f);
+		if (target && target.GetComponent("Player")) {
+			transform.position = Vector3.Lerp (transform.position, position, 0.04f);
+		}
+		else {
+			transform.position = position;
+		}
 	}
 	
 	// Update is called once per frame

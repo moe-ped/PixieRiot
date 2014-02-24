@@ -66,7 +66,14 @@ public class Cookie : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Main main = Camera.main.GetComponent ("Main") as Main;
-		renderer.material.color = main.blockColors[Random.Range(0, main.blockColors.Length)];
+		if (transform.parent) {
+			if (transform.parent.name == "Fort1") {
+				renderer.material.color = main.teams[0].blockColors[Random.Range(0, main.teams[0].blockColors.Length)];
+			}
+			else if (transform.parent.name == "Fort2") {
+				renderer.material.color = main.teams[1].blockColors[Random.Range(0, main.teams[1].blockColors.Length)];
+			}
+		}
 	}
 	
 	// Update is called once per frame

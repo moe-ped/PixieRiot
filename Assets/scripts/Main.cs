@@ -6,6 +6,7 @@ using System.Collections;
 public class Teams
 {
 	public string name;
+	public Color[] blockColors = new Color[5];
 	public GameObject[] players;
 	public float score;
 	public int selectedWeapon = 0;
@@ -26,8 +27,6 @@ public class Main : MonoBehaviour {
 
 	public AudioClip pixyDieSound;
 	public AudioClip cookieDieSound;
-
-	public Color[] blockColors = new Color[5];
 
 	public float maxScore = 10;
 

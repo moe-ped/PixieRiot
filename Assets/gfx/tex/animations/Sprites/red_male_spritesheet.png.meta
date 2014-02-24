@@ -1,0 +1,198 @@
+fileFormatVersion: 2
+guid: 4020918cb64419f4fb6ebaa0228591b2
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: red_male_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 874
+        width: 384
+        height: 361
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: red_male_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 1114
+        width: 180
+        height: 77
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: red_male_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 975
+        width: 173
+        height: 95
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: red_male_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 690
+        width: 93
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: red_male_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 698
+        width: 204
+        height: 239
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: red_male_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 586
+        width: 47
+        height: 71
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: red_male_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 588
+        width: 47
+        height: 72
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: red_male_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 468
+        width: 251
+        height: 209
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: red_male_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 486
+        width: 44
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: red_male_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 488
+        width: 44
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: red_male_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 402
+        width: 48
+        height: 79
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: red_male_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 404
+        width: 48
+        height: 79
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: red_male_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 90
+        width: 240
+        height: 365
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: red_male_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 290
+        width: 98
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: red_male_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 286
+        width: 112
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: red_male_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 799
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: red_male_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 676
+        width: 92
+        height: 177
+      alignment: 0
+      pivot: {x: .5, y: .5}
+  spritePackingTag: 
+  userData: 
