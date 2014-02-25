@@ -7,6 +7,9 @@ public class WeaponSelect : MonoBehaviour {
 	public Transform[] buttons;
 	Main main;
 
+	public Color unavailable;
+	public Color highlight;
+
 	// Use this for initialization
 	void Start () {
 		main = Camera.main.GetComponent("Main") as Main;
@@ -29,8 +32,8 @@ public class WeaponSelect : MonoBehaviour {
 			}
 			else if (!main.weapons[b].available) {
 				weaponslot.available = false;
-				buttons[b].gameObject.renderer.material.color = new Color (0.7f, 0.3f, 0.3f);
-				weaponslot.normal = new Color (0.7f, 0.3f, 0.3f);
+				buttons[b].gameObject.renderer.material.color = unavailable;
+				weaponslot.normal = unavailable;
 			}
 			else {
 				weaponslot.available = true;

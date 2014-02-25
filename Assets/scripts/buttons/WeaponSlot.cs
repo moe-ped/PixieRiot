@@ -26,7 +26,7 @@ public class WeaponSlot : MonoBehaviour {
 	void OnMouseEnter () {
 		weaponSelect.thwart (true);
 		if (available) {
-			renderer.material.color = Color.green;
+			renderer.material.color = weaponSelect.highlight;
 		}
 	}
 
